@@ -1,0 +1,14 @@
+release/GilberMoorParityCheck.o
+release/HammingAlgorithm.o
+release/Tools.o
+release/decodewidget.o
+release/encodewidget.o
+release/hammingdecodewidget.o
+release/hammingencodewidget.o
+release/main.o
+release/mainwindow.o
+release/moc_decodewidget.o
+release/moc_encodewidget.o
+release/moc_hammingdecodewidget.o
+release/moc_hammingencodewidget.o
+release/moc_mainwindow.o

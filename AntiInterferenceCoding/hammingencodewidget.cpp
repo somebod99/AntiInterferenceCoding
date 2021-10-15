@@ -15,6 +15,9 @@ HammingEncodeWidget::HammingEncodeWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->encodedTextEdit->setEnabled(false);
+    ui->ChangePushButton->setEnabled(false);
+
     connect(ui->alphPushButton, SIGNAL(clicked()), this, SLOT(slotOnClickFileBrows()));
     connect(ui->gMatrixPushButton, SIGNAL(clicked()), this, SLOT(slotOnClickFileBrows()));
     connect(ui->seqPushButton, SIGNAL(clicked()), this, SLOT(slotOnClickFileBrows()));
@@ -61,6 +64,8 @@ void HammingEncodeWidget::slotOnClickEncodeButton()
             str_stream << bit;
 
         ui->encodedTextEdit->setText(QString::fromStdString(str_stream.str()));
+        ui->ChangePushButton->setEnabled(true);
+        ui->encodedTextEdit->setEnabled(true);
 
         QMessageBox::information(this, "", "Sequence encoded successfully");
     }

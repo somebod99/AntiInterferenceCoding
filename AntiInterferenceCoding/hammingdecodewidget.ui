@@ -31,21 +31,6 @@
     <string>Путь к файлу с алфавитом</string>
    </property>
   </widget>
-  <widget class="QTextEdit" name="decodedTextEdit">
-   <property name="geometry">
-    <rect>
-     <x>410</x>
-     <y>450</y>
-     <width>361</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>14</pointsize>
-    </font>
-   </property>
-  </widget>
   <widget class="QLabel" name="seqLabel">
    <property name="geometry">
     <rect>
@@ -281,6 +266,21 @@
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="decodedTextBrowser">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>450</y>
+     <width>361</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
    </property>
   </widget>
  </widget>

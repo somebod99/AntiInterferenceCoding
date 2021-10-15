@@ -1,0 +1,14 @@
+debug/GilberMoorParityCheck.o
+debug/HammingAlgorithm.o
+debug/Tools.o
+debug/decodewidget.o
+debug/encodewidget.o
+debug/hammingdecodewidget.o
+debug/hammingencodewidget.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_decodewidget.o
+debug/moc_encodewidget.o
+debug/moc_hammingdecodewidget.o
+debug/moc_hammingencodewidget.o
+debug/moc_mainwindow.o

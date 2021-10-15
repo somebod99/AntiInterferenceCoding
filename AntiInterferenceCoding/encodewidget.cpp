@@ -13,6 +13,9 @@ EncodeWidget::EncodeWidget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->encodedTextEdit->setEnabled(false);
+    ui->changePushButton->setEnabled(false);
+
     connect(ui->alphabet_file_dialog_button, SIGNAL(clicked()), this, SLOT(slotOnClickFileBrows()));
     connect(ui->encode_seq_file_dialog_button, SIGNAL(clicked()), this, SLOT(slotOnClickFileBrows()));
     connect(ui->encode_button, SIGNAL(clicked()), this, SLOT(slotOnClickEncodeButton()));
@@ -68,6 +71,8 @@ void EncodeWidget::slotOnClickEncodeButton()
             ss << bit;
 
         ui->encodedTextEdit->setText(QString::fromStdString(ss.str()));
+        ui->changePushButton->setEnabled(true);
+        ui->encodedTextEdit->setEnabled(true);
 
         QMessageBox::information(this, "", "Sequence encoded successfully");
     }
