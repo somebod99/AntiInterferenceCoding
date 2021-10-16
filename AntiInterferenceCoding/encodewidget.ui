@@ -169,7 +169,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Пусть к файлу с последовательностью для кодирования</string>
+    <string>Путь к файлу с последовательностью для кодирования</string>
    </property>
   </widget>
   <widget class="QTextEdit" name="encodedTextEdit">

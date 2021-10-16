@@ -46,7 +46,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Путь к фалу с декодируемой последовательностью</string>
+    <string>Путь к файлу с декодируемой последовательностью</string>
    </property>
   </widget>
   <widget class="QPushButton" name="alphPushButton">
@@ -223,14 +223,14 @@
     </font>
    </property>
    <property name="text">
-    <string>Путь к фалу с пораждающей матрицей</string>
+    <string>Путь к файлу с пораждающей матрицей</string>
    </property>
   </widget>
   <widget class="QLabel" name="decodeLabel">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>430</y>
+     <y>420</y>
      <width>361</width>
      <height>20</height>
     </rect>
@@ -251,7 +251,7 @@
    <property name="geometry">
     <rect>
      <x>410</x>
-     <y>430</y>
+     <y>420</y>
      <width>361</width>
      <height>20</height>
     </rect>

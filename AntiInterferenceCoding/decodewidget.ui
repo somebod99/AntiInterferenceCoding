@@ -79,7 +79,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Пусть к файлу с алфавитом</string>
+    <string>Путь к файлу с алфавитом</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="encode_seq_edit">
@@ -199,7 +199,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Декодируемая последовательность</string>
+    <string>Декодированная последовательность</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>

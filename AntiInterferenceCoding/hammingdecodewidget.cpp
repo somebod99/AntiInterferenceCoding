@@ -58,15 +58,12 @@ void HammingDecodeWidget::slotOnClickDecodeButton()
             str_stream << bit;
 
         ui->decodingTextBrowser->setText(QString::fromStdString(str_stream.str()));
+        ui->decodedTextBrowser->setText(QString::fromStdString(res));
 
         if(errors.size())
             QMessageBox::warning(this, "", errors.c_str());
         else
             QMessageBox::information(this, "", "Sequence decoded successfully");
-
-        std::ofstream file("out.txt");
-        file << res;
-        file.close();
     }
     catch (const char* er)
     {
